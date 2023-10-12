@@ -1,7 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-inquirer
+function receiveInputs(){
+    return inquirer
     .prompt([
         {
             type: 'input',
@@ -30,7 +31,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Please provide Licending information for your project.',
+            message: 'Please provide Licensing information for your project.',
             name: 'license',
         },
         {
@@ -47,14 +48,39 @@ inquirer
             type: 'input',
             message: 'Please provide questions for your project.',
             name: 'questions',
-        }
-    ])
-    .then(((details) => {
-        console.log(details);
-        fs.writeFile('README.md', JSON.stringify(details, null, '\t'), function(err){
-            if (err) {
-                return console.log(err);
-            }
-            console.log('Success!');
-        });
-    }));
+        },
+        {
+            type: 'input',
+            message: 'Please provide your GitHub username.',
+            name: 'github',
+        },
+        {
+            type: 'input',
+            message: 'Please provide your email address.',
+            name: 'email',
+        },
+    ]);
+}
+  function generateFile(answers) {
+    return `
+    ${answers.title}
+    ${answers.description}
+    ${answers.tableofcontents}
+    ${answers.installation}
+    ${answers.usage}
+    ${answers.license}
+    ${answers.contributing}
+    ${answers.tests}
+    ${answers.questions}
+    Link to GitHub Profile: https://github.com/${answers.github}
+    For any more questions, you can reach me at ${answers.email}
+    `;
+}
+
+receiveInputs()
+    .then(generateFile)
+    .then((readMeContent) => {
+        fs.writeFile('README.md', readMeContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created README.md!')
+        );
+    });
