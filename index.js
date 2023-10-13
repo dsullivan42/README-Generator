@@ -41,11 +41,6 @@ function receiveInputs(){
         },
         {
             type: 'input',
-            message: 'Please provide questions for your project.',
-            name: 'questions',
-        },
-        {
-            type: 'input',
             message: 'Please provide your GitHub username.',
             name: 'github',
         },
@@ -58,10 +53,10 @@ function receiveInputs(){
 }
   function generateFile(answers) {
     return `
-    ${answers.title}
+    # ${answers.title}
     ----------------------------
     
-        Description
+        ## Description
             ${answers.description}
         ---------------------------------
 
@@ -78,28 +73,27 @@ function receiveInputs(){
             ${answers.installation}
         ---------------------------------
 
-        Usage
+        ## Usage
             ${answers.usage}
         ---------------------------------
 
-        License
+        ## License
             ${answers.license}
         ---------------------------------
 
-        Contributing
+        ## Contributing
             ${answers.contributing}
         ---------------------------------
 
-        Tests
+        ## Tests
             ${answers.tests}
         ---------------------------------
 
-        Questions
-            ${answers.questions}
+        ## Questions
     
-                Link to GitHub Profile: https://github.com/${answers.github}
+               - Link to GitHub Profile: https://github.com/${answers.github}
     
-                For any more questions, you can reach me at ${answers.email}
+               - For any more questions, you can reach me at ${answers.email}
     `;
 }
 

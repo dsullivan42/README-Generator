@@ -1,9 +1,9 @@
 
-    u
+    # README.md Generator
     ----------------------------
     
-        Description
-            u
+        ## Description
+            Using user input, this program will create a complex README.md file using javascript, and the inquirer package, downloaded through node
         ---------------------------------
 
         ## Table of Contents
@@ -16,29 +16,28 @@
         ---------------------------------
 
         ## Installation
-            u
+             installed the inquirer package through node using npm i inquirer@8.2.4 to install the packages, then using index.js, the user is prompted with inputs, which fill the README.md file
         ---------------------------------
 
-        Usage
-            u
+        ## Usage
+            used to create personalized README.md files
         ---------------------------------
 
-        License
-            u
+        ## License
+            Inquirer v8.2.4 package used for user prompts
         ---------------------------------
 
-        Contributing
-            u
+        ## Contributing
+            no contributions given for this project
         ---------------------------------
 
-        Tests
-            u
+        ## Tests
+            npm run test
         ---------------------------------
 
-        Questions
-            u
+        ## Questions
     
-                Link to GitHub Profile: https://github.com/u
+               - Link to GitHub Profile: https://github.com/dsullivan42
     
-                For any more questions, you can reach me at u
+               - For any more questions, you can reach me at ojojoj89@gmail.com
     
