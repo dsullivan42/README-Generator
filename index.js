@@ -65,10 +65,16 @@ function receiveInputs(){
             ${answers.description}
         ---------------------------------
 
-        Table of Contents
+        ## Table of Contents
+        - [Installation](#installation)
+        - (usage)
+        - (license)
+        - (contributing)
+        - (tests)
+        - (questions)
         ---------------------------------
 
-        Installation
+        ## Installation
             ${answers.installation}
         ---------------------------------
 
