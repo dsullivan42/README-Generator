@@ -66,12 +66,12 @@ function receiveInputs(){
         ---------------------------------
 
         ## Table of Contents
-        - [Installation](#installation)
-        - (usage)
-        - (license)
-        - (contributing)
-        - (tests)
-        - (questions)
+        - installation
+        - usage
+        - license
+        - contributing
+        - tests
+        - questions
         ---------------------------------
 
         ## Installation
