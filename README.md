@@ -28,7 +28,7 @@
         ---------------------------------
 
         ## Contributing
-            no contributions given for this project
+            Discussed with a friend, how to potentially create clickable links within backticks, but their recommendation didn't work, so it was discarded.
         ---------------------------------
 
         ## Tests
