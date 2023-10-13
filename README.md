@@ -16,7 +16,7 @@
         ---------------------------------
 
         ## Installation
-             installed the inquirer package through node using npm i inquirer@8.2.4 to install the packages, then using index.js, the user is prompted with inputs, which fill the README.md file
+            installed the inquirer package through node using npm i inquirer@8.2.4 to install the packages, then using index.js, the user is prompted with inputs, which fill the README.md file
         ---------------------------------
 
         ## Usage
@@ -28,7 +28,7 @@
         ---------------------------------
 
         ## Contributing
-            no contributions given for this project
+            Friend assisted in advice to make links clickable in the README.md file, however the changes were discarded, because his advice was not functional
         ---------------------------------
 
         ## Tests

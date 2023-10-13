@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+
+//function where user is prompted for inputs
 function receiveInputs(){
     return inquirer
     .prompt([
@@ -51,6 +53,7 @@ function receiveInputs(){
         },
     ]);
 }
+// function to generate and format the README file using the user inputs
   function generateFile(answers) {
     return `
     # ${answers.title}
@@ -96,7 +99,7 @@ function receiveInputs(){
                - For any more questions, you can reach me at ${answers.email}
     `;
 }
-
+//calls the generateFile function and writes the README file
 receiveInputs()
     .then(generateFile)
     .then((readMeContent) => {
