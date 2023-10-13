@@ -16,11 +16,6 @@ function receiveInputs(){
         },
         {
             type: 'input',
-            message: 'Please provide a Table of Contents for your project.',
-            name: 'table-of-contents',
-        },
-        {
-            type: 'input',
             message: 'Please provide installation instructions for your project.',
             name: 'installation',
         },
@@ -64,16 +59,41 @@ function receiveInputs(){
   function generateFile(answers) {
     return `
     ${answers.title}
-    ${answers.description}
-    ${answers.tableofcontents}
-    ${answers.installation}
-    ${answers.usage}
-    ${answers.license}
-    ${answers.contributing}
-    ${answers.tests}
-    ${answers.questions}
-    Link to GitHub Profile: https://github.com/${answers.github}
-    For any more questions, you can reach me at ${answers.email}
+    ----------------------------
+    
+        Description
+            ${answers.description}
+        ---------------------------------
+
+        Table of Contents
+        ---------------------------------
+
+        Installation
+            ${answers.installation}
+        ---------------------------------
+
+        Usage
+            ${answers.usage}
+        ---------------------------------
+
+        License
+            ${answers.license}
+        ---------------------------------
+
+        Contributing
+            ${answers.contributing}
+        ---------------------------------
+
+        Tests
+            ${answers.tests}
+        ---------------------------------
+
+        Questions
+            ${answers.questions}
+    
+                Link to GitHub Profile: https://github.com/${answers.github}
+    
+                For any more questions, you can reach me at ${answers.email}
     `;
 }
 
